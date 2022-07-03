@@ -1,4 +1,4 @@
-name: RT-AC85P
+name: MI-R3P
 
 on: 
   release:
@@ -37,7 +37,7 @@ jobs:
         mkdir -p /opt/images/
     - name: Build Firmware
       env:
-        TNAME: RT-AC85P
+        TNAME: MI-R3P
       run: |
         cd /opt/rt-n56u/trunk
         if [ ! -f configs/templates/$TNAME.config ] ; then
